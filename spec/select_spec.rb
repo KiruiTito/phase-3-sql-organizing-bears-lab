@@ -27,6 +27,6 @@ describe 'querying the bears table' do
   end
 
   it 'selects the youngest bear and returns their name and age' do
-    expect(db.execute(select_youngest_bear_and_returns_name_and_age)).to eq([["Grinch", 2]])
+    expect(db.execute(selects_youngest_bear_and_returns_name_and_age)).to eq([["Grinch", 2]])
   end
 end
